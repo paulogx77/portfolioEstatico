@@ -1,0 +1,365 @@
+/* style.css (Versão Final com Páginas Sobre e Contato) */
+
+/* --- Estilos Globais --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding-top: 60px; 
+}
+
+/* --- Header e Navegação Fixa --- */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    padding: 0 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* --- Conteúdo Principal e Títulos --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.page-title p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* --- Seção da Equipe (Página Inicial) --- */
+#equipe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.perfil-link {
+    text-decoration: none;
+}
+
+.perfil {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.perfil:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.perfil h2 {
+    margin: 10px 0 5px 0;
+    font-size: 1.4rem;
+    color: #007BFF;
+}
+
+.perfil p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+#cadastro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#cadastro button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #00c853; /* Cor verde mais vibrante */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cadastro button:hover {
+    background-color: #009624;
+}
+
+/* --- Rodapé --- */
+footer {
+    padding: 20px;
+    margin-top: 60px;
+    color: #888;
+    text-align: center;
+}
+
+/* ===== ESTILOS PARA AS PÁGINAS NOVAS (SOBRE E CONTATO) ===== */
+
+/* Caixa de conteúdo para a página "Sobre" */
+.content-box {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a caixa */
+    line-height: 1.7; /* Melhora a legibilidade */
+}
+
+/* Grade de cards para a página "Contato" */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.contact-card p {
+    margin: 10px 0;
+    word-break: break-all; /* Garante que emails longos não quebrem o layout */
+}
+
+
+/* ===== ESTILOS PARA AS PÁGINAS DE PERFIL E PROJETO ===== */
+/* (Estes estilos permanecem os mesmos) */
+
+.perfil-cabecalho {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.perfil-cabecalho img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.perfil-cabecalho h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+.perfil-cabecalho p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.projeto-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.projeto-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.projeto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+}
+.projeto-info {
+    padding: 20px;
+}
+.projeto-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.projeto-info p {
+    margin: 0;
+    color: #555;
+}
+.projeto-detalhe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.projeto-detalhe img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+}
+.projeto-detalhe-texto h1 {
+    margin-top: 0;
+}
+.projeto-criador {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: -10px;
+}
+.projeto-criador a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tags {
+    margin-top: 20px;
+}
+.tags span {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.tab-nav {
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 20px;
+}
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+    margin-bottom: -2px;
+}
+.tab-button:hover {
+    color: #007BFF;
+}
+.tab-button.active {
+    color: #007BFF;
+    border-bottom-color: #007BFF;
+}
+.tab-pane {
+    display: none;
+}
+.tab-pane.active {
+    display: block;
+}
+.comentario {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #e9ecef;
+}
+.comentario small {
+    color: #007BFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+.comentario-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+.comentario-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+.comentario-form button:hover {
+    background-color: #0056b3;
+}

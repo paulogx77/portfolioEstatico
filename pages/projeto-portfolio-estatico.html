@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Projeto: Portfólio Estático</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header><nav><ul><li><a href="../index.html">Início</a></li></ul></nav></header>
+    <main>
+        <div class="projeto-detalhe">
+            <img src="/pages/img/portestatic.png" alt="Capa do projeto Portfólio">
+            <div class="projeto-detalhe-texto">
+                <h1>Portfólio Estático (DAW I)</h1>
+                <p class="projeto-criador">Desenvolvido por Paulo Guilherme</p>
+                <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+            </div>
+        </div>
+        <div class="tabs-container">
+            <div class="tab-nav">
+                <button class="tab-button active" data-tab="sobre">Sobre o Projeto</button>
+                <button class="tab-button" data-tab="comentarios">Comentários</button>
+            </div>
+            <div class="tab-content">
+                <div id="sobre" class="tab-pane active">
+                    <h3>Descrição</h3>
+                    <p>Este é o projeto que você está navegando agora. Foi desenvolvido como um site estático para a disciplina de Desenvolvimento de Aplicações Web I, com foco no uso de HTML semântico, CSS para estilização e JavaScript puro para manipulação do DOM, especialmente na seção de comentários.</p>
+                </div>
+                <div id="comentarios" class="tab-pane">
+                   <form class="comentario-form">
+                        <textarea placeholder="Deixe seu comentário..."></textarea>
+                        <button type="submit">Comentar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><p>&copy; 2025 - Projeto de Portfólios</p></footer>
+    <script src="../main.js"></script>
+</body>
+</html>

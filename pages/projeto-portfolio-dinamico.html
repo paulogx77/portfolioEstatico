@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Projeto: Portfólio Dinâmico</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="projeto-detalhe">
+            <img src="#" alt="Capa do projeto Portfólio Dinâmico">
+            <div class="projeto-detalhe-texto">
+                <h1>Portfólio Dinâmico (Em Desenvolvimento)</h1>
+                <p class="projeto-criador">Desenvolvido por Paulo Guilherme</p>
+                <div class="tags"><span>Node.js</span><span>EJS</span><span>MongoDB</span></div>
+            </div>
+        </div>
+        <div class="tabs-container">
+            <div class="tab-nav">
+                <button class="tab-button active" data-tab="sobre">Sobre o Projeto</button>
+                <button class="tab-button" data-tab="comentarios">Comentários</button>
+            </div>
+            <div class="tab-content">
+                <div id="sobre" class="tab-pane active">
+                    <h3>Descrição</h3>
+                    <p>Esta é a próxima evolução deste portfólio. O objetivo é transformá-lo em uma aplicação web
+                        Full-Stack, onde os perfis, projetos e comentários são armazenados em um banco de dados
+                        (MongoDB) e gerenciados por um servidor (Node.js/Express). As páginas serão renderizadas
+                        dinamicamente usando EJS, permitindo que o cadastro de novas pessoas e projetos seja feito em
+                        tempo real.</p>
+                </div>
+                <div id="comentarios" class="tab-pane">
+                    <!-- O formulário que estava faltando -->
+                    <form class="comentario-form">
+                        <textarea placeholder="Deixe seu comentário..."></textarea>
+                        <button type="submit">Comentar</button>
+                    </form>
+                    <!-- Novos comentários serão inseridos aqui pelo JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Projeto de Portfólios</p>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>

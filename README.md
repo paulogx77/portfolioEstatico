@@ -1,31 +1,35 @@
 ** Portfólio de Equipe - Projeto DAW I
 
-1. Objetivo
-Este projeto foi desenvolvido para a disciplina de Desenvolvimento de Aplicações Web I (DAW I) do curso de Análise e Desenvolvimento de Sistemas do IFPB.
-O objetivo principal é demonstrar o uso de tecnologias web fundamentais (HTML, CSS e JavaScript puro) para criar um site de múltiplas páginas, interligado e interativo. O tema escolhido foi um Portfólio de Equipe, onde apresentamos os perfis dos desenvolvedores e os projetos em que trabalharam.
-A aplicação faz uso extensivo da API do DOM para manipulação de elementos, criação de interatividade nas abas de conteúdo e implementação de uma seção de comentários dinâmica, com persistência de dados no localStorage do navegador.
+1. *Objetivo*
 
-2. Tecnologias Utilizadas
+    Este projeto foi desenvolvido para a disciplina de Desenvolvimento de Aplicações Web I (DAW I) do curso de Análise e Desenvolvimento de Sistemas do IFPB.
+    
+    O objetivo principal é demonstrar o uso de tecnologias web fundamentais (HTML, CSS e JavaScript puro) para criar um site de múltiplas páginas, interligado e interativo. O tema escolhido foi um Portfólio de Equipe, onde apresentamos os perfis dos desenvolvedores e os projetos em que trabalharam.
+    
+    A aplicação faz uso extensivo da API do DOM para manipulação de elementos, criação de interatividade nas abas de conteúdo e implementação de uma seção de comentários dinâmica, com persistência de dados no localStorage do navegador.
 
-* HTML5: Para a estruturação semântica do conteúdo.
+2. *Tecnologias Utilizadas*
 
-* CSS3: Para a estilização, layout e responsividade.
+    * HTML5: Para a estruturação semântica do conteúdo.
 
-* JavaScript (ES6+): Para a interatividade, manipulação da API do DOM e gerenciamento do localStorage.
+    * CSS3: Para a estilização, layout e responsividade.
 
-* localStorage API: Para persistir o nome do usuário e os comentários de forma local no navegador.
-Nenhum framework CSS (como Bootstrap) ou JavaScript (como React, Vue) foi utilizado, atendendo ao requisito de focar no uso direto das tecnologias base da web.
+    * JavaScript (ES6+): Para a interatividade, manipulação da API do DOM e gerenciamento do localStorage.
 
-3. Como Executar o Projeto
-Como este é um projeto estático, não há necessidade de um servidor ou de processos de compilação.
+    * localStorage API: Para persistir o nome do usuário e os comentários de forma local no navegador.
+    Nenhum framework CSS (como Bootstrap) ou JavaScript (como React, Vue) foi utilizado, atendendo ao requisito de focar no uso direto das tecnologias base da web.
 
-* Clone ou baixe o repositório.
-* Abra o arquivo index.html diretamente no seu navegador de preferência (Google Chrome, Firefox, etc.).
+3. *Como Executar o Projeto?*
 
-Importante: Talvez seu navegador bloqueie o prompt para infomar seu nome de usuario!
+    Como este é um projeto estático, não há necessidade de um servidor ou de processos de compilação.
+
+    * Clone ou baixe o repositório.
+    * Abra o arquivo index.html diretamente no seu navegador de preferência (Google Chrome, Firefox, etc.).
+
+    Importante: Talvez seu navegador bloqueie o prompt para infomar seu nome de usuario!
 
 
 4. Autores
-Paulo Guilherme
-Denis Paulo
-Gustavo Davi
+    - Paulo Guilherme
+    - Denis Paulo
+    - Gustavo Davi
